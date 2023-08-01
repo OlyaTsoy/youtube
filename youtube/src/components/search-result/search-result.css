@@ -1,0 +1,266 @@
+.result__container {
+  background-color: #FAFAFA;
+}
+
+.result__search {
+  margin-top: 120px;
+}
+
+.result__title {
+  font-size: 29px;
+  line-height: 40px;
+  color: #000000;
+}
+
+.result__form {
+  display: flex;
+  flex-direction: row;
+  margin-top: 12px;
+}
+
+.result__formWrapper {
+  position: relative;
+  width: 100%;
+}
+
+.result__formField {
+  background-color: #FFFFFF;
+  border-radius: 5px 0px 0px 5px;
+  border: 1px solid rgba(23, 23, 25, 0.2);
+  padding: 15px 14px;
+  color: #272727;
+  font-size: 20px;
+  line-height: 24px;
+  /* width: 890px; */
+  width: 100%;
+  padding-right: 52px;
+}
+
+.result__formField:focus {
+  outline: none;
+  background-color: rgba(197, 228, 249, 0.3);
+  border: 1px solid #1390E5;
+}
+
+.result__formLike {
+  position: absolute;
+  top: 17px;
+  right: 16.55px;
+}
+
+.result__formLike-active * {
+  fill: #C5E4F9;
+}
+
+.result__fieldLike {
+  position: absolute;
+  left: 751px;
+  top: 53px;
+  font-family: 'PT Sans', sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  width: 220px;
+  border-radius: 5px;
+  background-color: #FFFFFF;
+  box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.15);
+  padding: 15px;
+}
+
+.result__fieldLike::before {
+  position: absolute;
+  content: '';
+  border: 12px solid transparent;
+  border-bottom: 12px solid #FFFFFF;
+  left: 50%;
+  margin-left: -12px;
+  top: -21px;
+  width: 0;
+}
+
+.result__text {
+  color: #000000;
+  margin-bottom: 15px;
+}
+
+.result__link {
+  color: #1390E5;
+}
+
+.result__formBtn {
+  font-size: 20px;
+  line-height: 24px;
+  color: #FFFFFF;
+  background-color: #1390E5;
+  border-radius: 0px 5px 5px 0px;
+  border: 1px solid #1390E5;
+  padding: 14px 20px;
+  width: 150px;
+}
+
+.result__content {
+  margin-top: 40px;
+}
+
+.result__panel {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.result__name {
+  font-size: 16px;
+  line-height: 24px;
+  color: #000000;
+}
+
+.result__name__request {
+  font-weight: bold;
+  margin-left: 8px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 200px;
+}
+
+.result__number {
+  font-size: 16px;
+  line-height: 24px;
+  color: rgba(23, 23, 25, 0.3);
+  margin-left: 15px;
+}
+
+.result__nav {
+  margin-left: auto;
+}
+
+.result__navView {
+  margin-left: 15px;
+}
+
+.result__navImage * {
+  stroke: rgba(39, 39, 39, 0.3);
+}
+
+.result__navImage:hover * {
+  stroke: #272727;
+}
+
+.result__navImage-active * {
+  stroke: #272727;
+}
+
+.result__list {
+  display: flex;
+  flex-direction: column;
+}
+
+.result__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 260px);
+}
+
+.result__gridItem {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.result__listItem {
+  margin-top: 20px;
+  display: flex;
+}
+
+.result__thumbnail {
+  display: block;
+  width: 245px;
+  height: 138px;
+  background-color: #FFFFFF;
+  border: 1px solid #1390E5;
+  margin-bottom: 8px;
+}
+
+.result__gridText {
+  display: flex;
+  flex-direction: column;
+  width: 245px;
+}
+
+.result__listText {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+}
+
+.result__videoTitle {
+  font-size: 14px;
+  line-height: 16px;
+  color: #000000;
+  font-weight: bold;
+  margin-bottom: 8px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.result__description {
+  font-size: 14px;
+  line-height: 16px;
+  color: rgba(23, 23, 25, 0.3);
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+@media screen and (width < 800px) {
+  .result__formField {
+    background-color: #FFFFFF;
+    border-radius: 5px 0px 0px 5px;
+    border: 1px solid rgba(23, 23, 25, 0.2);
+    padding: 15px 14px;
+    color: #272727;
+    font-size: 20px;
+    line-height: 24px;
+    width: 100%;
+    padding-right: 52px;
+  }
+  .result__name__request {
+    font-weight: bold;
+    margin-left: 8px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 25%;
+  }
+  .result__grid {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+  }
+  .result__thumbnail {
+    display: block;
+    /* width: 100%; */
+    height: 138px;
+    background-color: #FFFFFF;
+    border: 1px solid #1390E5;
+    margin-bottom: 8px;
+  }
+  .result__gridText {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .result__gridItem {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 3px;
+  }
+  .result__fieldLike {
+    position: absolute;
+    left: 36%;
+    top: 53px;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    width: 220px;
+    border-radius: 5px;
+    background-color: #FFFFFF;
+    box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.15);
+    padding: 15px;
+  }
+}
