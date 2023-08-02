@@ -2,7 +2,7 @@ import "./header.css";
 
 import { NavLink, Link } from "react-router-dom";
 
-import { ReactComponent as Logo } from "../../assets/sibdev-logo.svg";
+import { ReactComponent as Logo } from "../../assets/sibdevLogo.svg";
 
 const Header = () => {
   const logOut = (e) => {

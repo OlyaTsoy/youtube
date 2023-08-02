@@ -3,7 +3,7 @@ import "./authorization.css";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
-import { ReactComponent as Logo } from "../../assets/sibdev-logo.svg";
+import { ReactComponent as Logo } from "../../assets/sibdevLogo.svg";
 import { ReactComponent as ClosedEye } from "../../assets/closedEye.svg";
 import { ReactComponent as OpenEye } from "../../assets/openEye.svg";
 
